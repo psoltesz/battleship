@@ -92,18 +92,18 @@ def carrier(n):
                 h1, h2 = coords.split(" ")
                 sp = (column.index(h1), int(h2)-1)
                 if check(n, orient, sp, shiplength) == True:
-                    print("\nOops, you either already placed something here, or your ship sailed off the map. Please try again.")
+                    print("\nOops, you either placed something there already, or your ship sailed off the map. Please try again.")
                     continue
                 placeshiphori(n, sp, shiplength)
                 break
     elif orient == "V": #vertical placement
         while True:
-            coords = input("\nPlease provide the bow (start) coordinates separated by spaces (example: B 2): ")
+            coords = input("\nPlease provide the bow (start) coordinates separated by spaces (example: D 2): ")
             if re.findall(pattern, coords):
                 h1, h2 = coords.split(" ")
                 sp = (column.index(h1), int(h2)-1)
                 if check(n, orient, sp, shiplength) == True:
-                    print("\nOops, you either already placed something here, or your ship sailed off the map. Please try again.")
+                    print("\nOops, you either placed something there already, or your ship sailed off the map. Please try again.")
                     continue
                 placeshipvert(n, sp, shiplength)   
                 break
@@ -126,18 +126,18 @@ def battleship(n):
                 h1, h2 = coords.split(" ")
                 sp = (column.index(h1), int(h2)-1)
                 if check(n, orient, sp, shiplength) == True:
-                    print("\nOops, you either already placed something here, or your ship sailed off the map. Please try again.")
+                    print("\nOops, you either placed something there already, or your ship sailed off the map. Please try again.")
                     continue
                 placeshiphori(n, sp, shiplength)
                 break
     elif orient == "V": #vertical placement
         while True:
-            coords = input("\nPlease provide the bow (start) coordinates separated by spaces (example: B 2): ")
+            coords = input("\nPlease provide the bow (start) coordinates separated by spaces (example: D 2): ")
             if re.findall(pattern, coords):
                 h1, h2 = coords.split(" ")
                 sp = (column.index(h1), int(h2)-1)
                 if check(n, orient, sp, shiplength) == True:
-                    print("\nOops, you either already placed something here, or your ship sailed off the map. Please try again.")
+                    print("\nOops, you either placed something there already, or your ship sailed off the map. Please try again.")
                     continue
                 placeshipvert(n, sp, shiplength)   
                 break
@@ -160,18 +160,18 @@ def cruiser(n):
                 h1, h2 = coords.split(" ")
                 sp = (column.index(h1), int(h2)-1)
                 if check(n, orient, sp, shiplength) == True:
-                    print("\nOops, you either already placed something here, or your ship sailed off the map. Please try again.")
+                    print("\nOops, you either placed something there already, or your ship sailed off the map. Please try again.")
                     continue
                 placeshiphori(n, sp, shiplength)
                 break
     elif orient == "V": #vertical placement
         while True:
-            coords = input("\nPlease provide the bow (start) coordinates separated by spaces (example: B 2): ")
+            coords = input("\nPlease provide the bow (start) coordinates separated by spaces (example: D 2): ")
             if re.findall(pattern, coords):
                 h1, h2 = coords.split(" ")
                 sp = (column.index(h1), int(h2)-1)
                 if check(n, orient, sp, shiplength) == True:
-                    print("\nOops, you either already placed something here, or your ship sailed off the map. Please try again.")
+                    print("\nOops, you either placed something there already, or your ship sailed off the map. Please try again.")
                     continue
                 placeshipvert(n, sp, shiplength)   
                 break
@@ -194,18 +194,18 @@ def submarine(n):
                 h1, h2 = coords.split(" ")
                 sp = (column.index(h1), int(h2)-1)
                 if check(n, orient, sp, shiplength) == True:
-                    print("\nOops, you either already placed something here, or your ship sailed off the map. Please try again.")
+                    print("\nOops, you either placed something there already, or your ship sailed off the map. Please try again.")
                     continue
                 placeshiphori(n, sp, shiplength)
                 break
     elif orient == "V": #vertical placement
         while True:
-            coords = input("\nPlease provide the bow (start) coordinates separated by spaces (example: B 2): ")
+            coords = input("\nPlease provide the bow (start) coordinates separated by spaces (example: D 2): ")
             if re.findall(pattern, coords):
                 h1, h2 = coords.split(" ")
                 sp = (column.index(h1), int(h2)-1)
                 if check(n, orient, sp, shiplength) == True:
-                    print("\nOops, you either already placed something here, or your ship sailed off the map. Please try again.")
+                    print("\nOops, you either placed something there already, or your ship sailed off the map. Please try again.")
                     continue
                 placeshipvert(n, sp, shiplength)   
                 break
@@ -228,18 +228,18 @@ def destroyer(n):
                 h1, h2 = coords.split(" ")
                 sp = (column.index(h1), int(h2)-1)
                 if check(n, orient, sp, shiplength) == True:
-                    print("\nOops, you either already placed something here, or your ship sailed off the map. Please try again.")
+                    print("\nOops, you either placed something there already, or your ship sailed off the map. Please try again.")
                     continue
                 placeshiphori(n, sp, shiplength)
                 break
     elif orient == "V": #vertical placement
         while True:
-            coords = input("\nPlease provide the bow (start) coordinates separated by spaces (example: B 2): ")
+            coords = input("\nPlease provide the bow (start) coordinates separated by spaces (example: D 2): ")
             if re.findall(pattern, coords):
                 h1, h2 = coords.split(" ")
                 sp = (column.index(h1), int(h2)-1)
                 if check(n, orient, sp, shiplength) == True:
-                    print("\nOops, you either already placed something here, or your ship sailed off the map. Please try again.")
+                    print("\nOops, you either placed something there already, or your ship sailed off the map. Please try again.")
                     continue
                 placeshipvert(n, sp, shiplength)   
                 break
@@ -339,7 +339,7 @@ def battle(n, info): # n = field number, info = player number, sr = ship_remaini
     
 def gameover(info):
     os.system('cls' if os.name == 'nt' else 'clear')
-    print("CONGRATS, PLAYER %s, YOU WON!!!" % info)
+    print("CONGRATULATIONS, PLAYER %s, YOU WON!!!" % info)
     time.sleep(8)
     sys.exit()
 
